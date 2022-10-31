@@ -1,4 +1,5 @@
 # Project Template
+TEMPORARY MESSAGE!
 
 This is a template repository for CSC 207 projects. 
 This repository contains starter code for a gradle project.

@@ -9,7 +9,7 @@ public class HelloWorld {
     }
 
     public static String convert(int decide) {
-        if (decide % 15 == 0) {
+        if (decide % 25 == 0) {
             return "tutorial.HelloWorld";
         }
         if (decide % 3 == 0) {

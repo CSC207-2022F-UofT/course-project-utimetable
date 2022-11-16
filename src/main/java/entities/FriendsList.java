@@ -3,22 +3,22 @@ package entities;
 import java.util.ArrayList;
 
 public class FriendsList {
-    ArrayList friends;
-    ArrayList blocked;
+    ArrayList<Student> friends;
+    ArrayList<Student> blocked;
 
-    public ArrayList getFriends() {
+    public ArrayList<Student> getFriends() {
         return friends;
     }
 
-    public ArrayList getBlocked() {
+    public ArrayList<Student> getBlocked() {
         return blocked;
     }
 
-    public void setFriends(ArrayList friends) {
+    public void setFriends(ArrayList<Student> friends) {
         this.friends = friends;
     }
 
-    public void setBlocked(ArrayList blocked) {
+    public void setBlocked(ArrayList<Student> blocked) {
         this.blocked = blocked;
     }
 }

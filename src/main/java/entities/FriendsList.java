@@ -14,11 +14,11 @@ public class FriendsList {
         return blocked;
     }
 
-    public void setFriends(ArrayList friendNames) {
-        friends = friendNames;
+    public void setFriends(ArrayList friends) {
+        this.friends = friends;
     }
 
-    public void setBlocked(ArrayList blockedNames) {
-        blocked = blockedNames;
+    public void setBlocked(ArrayList blocked) {
+        this.blocked = blocked;
     }
 }

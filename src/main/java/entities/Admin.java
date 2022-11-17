@@ -7,11 +7,11 @@ public class Admin extends User {
 
     @Override
     public String getUsername() {
-        return username;
+        return this.username;
     }
     @Override
     public String getPassword() {
-        return password;
+        return this.password;
     }
 
     @Override

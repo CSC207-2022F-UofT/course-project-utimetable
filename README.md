@@ -39,3 +39,5 @@ Moving forward, we expect you to maintain this project structure. You *should* u
 You can create another simple class and try generating a test for this class.
 
 //yo
+
+//yo

@@ -6,14 +6,10 @@ public class Student extends User {
     String password;
 
     @Override
-    public String getUsername() {
-        return this.username;
-    }
+    public String getUsername() { return this.username; }
 
     @Override
-    public String getPassword() {
-        return this.password;
-    }
+    public String getPassword() { return this.password; }
 
     public Timetable getTimetable() {
         // TODO
@@ -38,13 +34,9 @@ public class Student extends User {
     }
 
     @Override
-    public void setUsername(String username) {
-        this.username = username;
-    }
+    public void setUsername(String username) { this.username = username; }
     @Override
-    public void setPassword(String password) {
-        this.password = password;
-    }
+    public void setPassword(String password) { this.password = password; }
 
     public void setTimetable(Timetable timetable) {
         // TODO

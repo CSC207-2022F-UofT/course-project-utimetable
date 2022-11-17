@@ -15,11 +15,11 @@ public class Admin extends User {
     }
 
     @Override
-    public void setUsername() {
+    public void setUsername(String username) {
         this.username = username;
     }
     @Override
-    public void setPassword() {
+    public void setPassword(String password) {
         this.password = password;
     }
 }

@@ -28,11 +28,6 @@ public class Student extends User {
         // A getter function that returns the user's imported timetable
     }
 
-    public Timetable getBlankTimetable() {
-        // TODO
-        // A getter function that returns an empty timetable with 5 rows and 12 columns
-    }
-
     public void setTimetable(Timetable timetable) {
         // TODO
         // A setter function that sets an empty timetable

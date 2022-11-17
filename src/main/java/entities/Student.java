@@ -57,7 +57,8 @@ public class Student extends User {
         // A setter function that sets the location of the user
         if (this.timetable == this.getBlankTimetable()) {
             this.location = null;
+        } else {
+            this.location = this.getTimetable().getCourseInfo();
         }
-        this.location = this.getTimetable().getCourseInfo();
     }
 }

@@ -2,7 +2,7 @@ package entities;
 
 import java.util.ArrayList;
 
-public class FriendsList {
+public class FriendsList extends Student{
     ArrayList<Student> friends;
     ArrayList<Student> blocked;
 

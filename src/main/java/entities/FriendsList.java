@@ -6,19 +6,19 @@ public class FriendsList extends Student{
     ArrayList<Student> friends;
     ArrayList<Student> blocked;
 
-    public ArrayList<Student> getFriends() {
-        return friends;
+    public ArrayList<Student> getFriends(Student studentValue) {
+        return studentValue.friends;
     }
 
-    public ArrayList<Student> getBlocked() {
-        return blocked;
+    public ArrayList<Student> getBlocked(Student studentValue) {
+        return studentValue.blocked;
     }
 
-    public void setFriends(ArrayList<Student> friends) {
-        this.friends = friends;
+    public void setFriends(Student studentValue, ArrayList<Student> friends) {
+        studentValue.friends = friends;
     }
 
-    public void setBlocked(ArrayList<Student> blocked) {
-        this.blocked = blocked;
+    public void setBlocked(Student studentValue, ArrayList<Student> blocked) {
+        studentValue.blocked = blocked;
     }
 }

@@ -1,4 +1,4 @@
 package entities;
 
-public record Interval(String courseCode, int start, int end) {
+public record Interval(int start, int end){
 }

@@ -8,9 +8,9 @@ import java.util.TreeMap;
 
 public class TimetableManager {
 
-//    public ArrayList<Section> compareTimetable(ArrayList<Timetable> timetables) {
-//
-//    }
+    public ArrayList<Section> compareTimetable(ArrayList<Timetable> timetables) {
+
+    }
 
 
 }

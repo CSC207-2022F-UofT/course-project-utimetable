@@ -18,23 +18,10 @@ public class Student extends User {
     public Timetable getTimetable() {
         // TODO
         // A getter function that returns the user's imported timetable
-        return this.timetable;
     }
 
     public Timetable getBlankTimetable() {
-        Timetable blankTimetable = new String[5][12];
-        for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 12; j++) {
-                blankTimetable[i][j] = "#";
-            }
-        }
-        return blankTimetable;
-    }
-
-    public Location getLocation() {
-        // TODO
-        // A getter function that returns the user's current location
-        return this.location;
+        // return blank timetable
     }
 
     @Override
@@ -45,17 +32,13 @@ public class Student extends User {
     public void setTimetable(Timetable timetable) {
         // TODO
         // A setter function that sets an empty timetable
-        this.timetable = this.getBlankTimetable();
     }
 
     public void setLocation() {
         // TODO
         // A setter function that sets the location of the user
-        if (this.timetable == this.getBlankTimetable()) {
-            this.location = null;
-        } else {
-            this.location = this.getTimetable().getCourseInfo();
-        }
+        // if the given timetable is a blank timetable, return null
+        // otherwise, return the location indicated on the timetable
     }
 
     public ArrayList<Student> getFriends() {

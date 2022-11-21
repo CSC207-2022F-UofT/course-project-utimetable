@@ -14,8 +14,10 @@ public class TimetableViewer {
         StringBuilder sch = new StringBuilder();
 
         for (Section sec: sections) {
-            sch.append( '\n' + sec.courseCode() + '\n' );
-            sch.append(sec.sectionCode() + '\n' + sec.sectionCode());
+            sch.append('\n' + sec.courseCode() + '\n' );
+            sch.append(sec.sectionCode() + '\n');
+            sch.append(sec.intervals());
+
         }
         return schedule;
     }

@@ -8,6 +8,7 @@ public class Login extends Page{
     public Login(Router router) {
         super(router);
     }
+    @Override
     public Page run() {
         enum Option {
             SIGN_IN,
@@ -20,8 +21,8 @@ public class Login extends Page{
         Option selection = promptInput(options);
 
         return switch (selection) {
-            case SIGN_IN -> this.router.signIn();
-            case SIGN_UP -> this.router.signUp();
+            case SIGN_IN -> this.router.getSignIn();
+            case SIGN_UP -> this.router.getSignUp();
         };
     }
 }

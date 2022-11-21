@@ -2,7 +2,7 @@ package pages;
 
 import java.util.*;
 
-abstract class Page {
+public abstract class Page {
     protected Router router;
 
     public Page(Router router) {

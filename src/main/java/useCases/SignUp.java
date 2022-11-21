@@ -10,7 +10,7 @@ public class SignUp {
     String message;
     public boolean checkNewUsername() {
         // check if the given username is already taken by another user.
-        return Database.checkNewUsername(this.username);
+        //
     }
 
     public boolean checkPasswordStrength() {

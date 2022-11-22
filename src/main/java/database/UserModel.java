@@ -6,16 +6,24 @@ import entities.User;
 
 import java.util.ArrayList;
 
-public abstract class UserModel {
+public class UserModel {
 
     public String username;
 
     public String password;
 
+    public String email;
+
     public ArrayList<Student> friends;
     public ArrayList<Student> blocked;
 
     public Timetable timetable;
+
+    public UserModel(String username, String password, String email) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+    }
 
     public String getUsername() {
         return username;

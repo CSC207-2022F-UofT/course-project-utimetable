@@ -21,4 +21,5 @@ public class FriendsList extends Student{
     public void setBlocked(Student studentValue, ArrayList<Student> blocked) {
         studentValue.blocked = blocked;
     }
+
 }

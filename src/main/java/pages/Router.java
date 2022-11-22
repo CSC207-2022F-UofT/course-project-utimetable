@@ -7,12 +7,21 @@ public class Router {
 
     private FriendListPage friendListPage;
 
+    private TimetableViewerPage timetableViewerPage;
+
     public FriendListPage getFriendListPage() {
         return friendListPage;
     }
 
     public void setFriendListPage(FriendListPage friendListPage) {
         this.friendListPage = friendListPage;
+    }
+
+    public TimetableViewerPage getTimetableViewerPage() {
+        return timetableViewerPage;
+    }
+    public void setTimeTableViewer(TimetableViewerPage timetableViewerPage) {
+        this.timetableViewerPage = timetableViewerPage;
     }
 
 

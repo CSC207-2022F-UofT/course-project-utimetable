@@ -1,6 +1,5 @@
 package useCases;
 
-import entities.FriendsList;
 import entities.Student;
 
 import java.util.ArrayList;
@@ -69,5 +68,15 @@ public class FriendsListManager {
         } else {
             ;
         }
+    }
+
+    public static Student getFriend(Student student1, String username) {
+        ArrayList<Student> friends = student1.getFriends();
+        for (int i = 0; i < friends.size(); i++) {
+            if (friends.get(i).getUsername() == username) {
+                return friends.get(i);
+            }
+        }
+        return student1;
     }
 }

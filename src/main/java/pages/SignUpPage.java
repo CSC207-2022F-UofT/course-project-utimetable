@@ -34,7 +34,7 @@ public class SignUpPage extends Page{
         database.add
 
 
-        if (this.signUp.checkExistingUsername(this.getDatabase(), newUsername)) {
+        if (this.signUp.checkNewUsername(this.getDatabase(), newUsername)) {
             System.out.println("Sign up successful!");
             return this.router.getSignIn();
         } else {

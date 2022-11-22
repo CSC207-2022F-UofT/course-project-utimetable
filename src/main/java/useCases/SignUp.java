@@ -8,7 +8,7 @@ import entities.Admin;
 import java.util.ArrayList;
 
 public class SignUp {
-    public boolean checkExistingUsername(ArrayList<UserModel> db, String un) {
+    public boolean checkNewUsername(ArrayList<UserModel> db, String un) {
         for (int i = 0; i < db.size(); i++) {
             if (db.indexOf(i).getUsername == un) {
                 return false;

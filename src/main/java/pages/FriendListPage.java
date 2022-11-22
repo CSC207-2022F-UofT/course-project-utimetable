@@ -1,11 +1,14 @@
 package pages;
 
+import entities.Student;
 import useCases.FriendsListManager;
 
 import java.util.Map;
 import java.util.Scanner;
 
 public class FriendListPage extends Page{
+
+    private Student currentUser;
 
     private FriendsListManager friendsListManager;
     public FriendListPage(Router router) {
@@ -30,7 +33,7 @@ public class FriendListPage extends Page{
         switch (selection) {
             case ADD_FRIEND:
 
-                //this.friendsListManager.addFriends(  );
+                this.friendsListManager.addFriends(  );
                 return this.router.getFriendListPage();
 //            case REMOVE_FRIEND:
             case SIGN_OUT:

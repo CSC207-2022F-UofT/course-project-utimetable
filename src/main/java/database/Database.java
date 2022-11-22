@@ -17,11 +17,4 @@ class Database {
         this.database = database;
     }
 
-    public void addNewUser(String username, String password) {
-        UserModel userModel = null;
-        userModel.setUsername(username);
-        userModel.setPassword(password);
-        this.database.add(userModel);
-    }
-
 }

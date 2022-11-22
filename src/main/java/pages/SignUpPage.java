@@ -31,8 +31,10 @@ public class SignUpPage extends Page{
         String newPassword = obj2.nextLine();
 
         // store new username & password in database
-        database.add
-
+        UserModel userModel = null;
+        userModel.setUsername(newUsername);
+        userModel.setPassword(newPassword);
+        this.database.add(userModel);
 
         if (this.signUp.checkNewUsername(this.getDatabase(), newUsername)) {
             System.out.println("Sign up successful!");

@@ -23,6 +23,7 @@ public class Router {
         this.timetableViewerPage = timetableViewerPage;
     }
 
+
     public LoginPage getLogin() {
         return login;
     }

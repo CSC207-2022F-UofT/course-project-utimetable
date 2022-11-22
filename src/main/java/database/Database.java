@@ -1,5 +1,6 @@
 package database;
 
+import database.UserModel;
 import entities.User;
 import entities.Student;
 import entities.Admin;
@@ -16,5 +17,7 @@ class Database {
     public void setDatabase(ArrayList<UserModel> database) {
         this.database = database;
     }
+
+
 
 }

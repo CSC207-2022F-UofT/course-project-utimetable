@@ -1,6 +1,5 @@
 package useCases;
 
-import entities.FriendsList;
 import entities.Student;
 
 import java.util.ArrayList;

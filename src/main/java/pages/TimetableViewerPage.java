@@ -29,6 +29,7 @@ public class TimetableViewerPage extends Page{
         // show visualization
         // prompt user to continue
 
+        System.out.println(visualization);
 
         return this.router.getFriendListPage();
     }

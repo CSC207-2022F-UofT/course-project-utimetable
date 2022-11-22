@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class Student extends User {
     protected ArrayList<Student> friends;
     protected ArrayList<Student> blocked;
+    protected Timetable timetable;
     String username;
     String password;
 
@@ -16,12 +17,7 @@ public class Student extends User {
     public String getPassword() { return this.password; }
 
     public Timetable getTimetable() {
-        // TODO
-        // A getter function that returns the user's imported timetable
-    }
-
-    public Timetable getBlankTimetable() {
-        // return blank timetable
+        return timetable;
     }
 
     @Override
@@ -32,13 +28,7 @@ public class Student extends User {
     public void setTimetable(Timetable timetable) {
         // TODO
         // A setter function that sets an empty timetable
-    }
-
-    public void setLocation() {
-        // TODO
-        // A setter function that sets the location of the user
-        // if the given timetable is a blank timetable, return null
-        // otherwise, return the location indicated on the timetable
+        this.timetable = timetable;
     }
 
     public ArrayList<Student> getFriends() {

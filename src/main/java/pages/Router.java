@@ -12,7 +12,6 @@ public class Router {
     public FriendListPage getFriendListPage() {
         return friendListPage;
     }
-
     public void setFriendListPage(FriendListPage friendListPage) {
         this.friendListPage = friendListPage;
     }
@@ -23,7 +22,6 @@ public class Router {
     public void setTimeTableViewer(TimetableViewerPage timetableViewerPage) {
         this.timetableViewerPage = timetableViewerPage;
     }
-
 
 
     public LoginPage getLogin() {

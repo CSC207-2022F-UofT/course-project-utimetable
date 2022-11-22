@@ -1,5 +1,6 @@
 package database;
 
+import database.UserModel;
 import entities.User;
 import entities.Student;
 import entities.Admin;

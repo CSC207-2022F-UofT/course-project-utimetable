@@ -1,7 +1,7 @@
 package pages;
 
-public class SignIn extends Page{
-    public SignIn(Router router) {
+public class SignInPage extends Page{
+    public SignInPage(Router router) {
         super(router);
     }
 

@@ -1,31 +1,43 @@
 package pages;
 
 public class Router {
-    private Login login;
-    private SignIn signIn;
-    private SignUp signUp;
+    private LoginPage login;
+    private SignInPage signIn;
+    private SignUpPage signUp;
 
-    public Login getLogin() {
+    private FriendListPage friendListPage;
+
+    public FriendListPage getFriendListPage() {
+        return friendListPage;
+    }
+
+    public void setFriendListPage(FriendListPage friendListPage) {
+        this.friendListPage = friendListPage;
+    }
+
+
+
+    public LoginPage getLogin() {
         return login;
     }
 
-    public void setLogin(Login login) {
+    public void setLogin(LoginPage login) {
         this.login = login;
     }
 
-    public SignIn getSignIn() {
+    public SignInPage getSignIn() {
         return signIn;
     }
 
-    public void setSignIn(SignIn signIn) {
+    public void setSignIn(SignInPage signIn) {
         this.signIn = signIn;
     }
 
-    public SignUp getSignUp() {
+    public SignUpPage getSignUp() {
         return signUp;
     }
 
-    public void setSignUp(SignUp signUp) {
+    public void setSignUp(SignUpPage signUp) {
         this.signUp = signUp;
     }
 }

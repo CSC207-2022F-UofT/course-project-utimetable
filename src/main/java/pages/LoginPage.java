@@ -1,11 +1,9 @@
 package pages;
 
-import java.util.Arrays;
-import java.util.EnumMap;
 import java.util.Map;
 
-public class Login extends Page{
-    public Login(Router router) {
+public class LoginPage extends Page{
+    public LoginPage(Router router) {
         super(router);
     }
     @Override

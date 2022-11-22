@@ -7,9 +7,9 @@ public class Client {
 
         Router router = new Router();
 
-        Login login = new Login(router);
-        SignIn signIn = new SignIn(router);
-        SignUp signUp = new SignUp(router);
+        LoginPage login = new LoginPage(router);
+        SignInPage signIn = new SignInPage(router);
+        SignUpPage signUp = new SignUpPage(router);
 
         router.setLogin(login);
         router.setSignIn(signIn);

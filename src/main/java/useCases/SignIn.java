@@ -5,15 +5,21 @@ import entities.Student;
 import entities.Admin;
 
 public class SignIn {
-    public boolean checkUsername(String username1, String username2) {
-        return username1 == username2;
+    int repeated;
+    public boolean checkUsername(User user1, String username) {
+        return user1.getUsername() == username;
     }
 
-    public boolean checkPassword(String password1, String password2) {
-        if (password1 == password2) {
+    public boolean checkPassword(User user2, String password) {
+        if (user2.getPassword() == password) {
             return true;
         } else {
+            this.repeated += 1;
             return false;
         }
+    }
+
+    public int repeatedPassword() {
+        return this.repeated;
     }
 }
